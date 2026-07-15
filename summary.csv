@@ -1,0 +1,4 @@
+run_name,distance_mean,distance_std,ep_len_mean,ep_len_std,fall_rate,checkpoint
+baseline_sparse1_solved10_random_net256,13.91655397954338,0.24919789879561965,197.95,63.377815519312435,0.75,baseline_sparse1_solved10_random_net256_20000000_steps.zip
+imitation_sparse1_solved10_qpos40,13.42915210824024,0.36838056221048926,242.95,40.37632350771922,0.9,imitation_sparse1_solved10_qpos40_50000000_steps.zip
+imitation_init0_sparse1_solved10_qpos40,13.758010772028893,0.2000458001767125,219.0,33.74462920228936,0.95,imitation_init0_sparse1_solved10_qpos40_30000000_steps.zip
