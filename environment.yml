@@ -1,9 +1,16 @@
-name: myosuite-env
+name: myosuite_env
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.12
+  - python=3.10
   - pip
+  - git
+  - numpy>=1.22.4,<2.0.0  # On force Conda à installer Numpy 1.x d'abord !
   - pip:
-    - -r requirements.txt
+    - git+https://github.com/aravindr93/mjrl.git@6e058535b8f0fa3368ce33e7090abbf275f9307e
+    - gym==0.26.2
+    - shimmy
+    - stable-baselines3
+    - deprl
+    - -e . --no-deps  # On force l'installation éditable sans écouter le pyproject.toml
