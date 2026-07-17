@@ -7,7 +7,7 @@ from myosuite.utils import gym
 
 def render_run_video(weighted_reward_keys, model_path, savepath, n_episodes=5, max_steps=1000):
     env = gym.make('myoOSLRunTrackImitation-v0', weighted_reward_keys=weighted_reward_keys)
-    model = PPO.load(model_path, env=env)
+    model = PPO.load(model_path, env=env, device="cpu")
 
     # transparence du groupe de géométries 1 — une fois suffit
     geom_1_indices = np.where(env.unwrapped.mj_model.geom_group == 1)

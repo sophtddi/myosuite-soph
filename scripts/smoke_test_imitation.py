@@ -37,7 +37,7 @@ if __name__ == "__main__":
     try:
         # Lancement de l'entraînement court
         model = train_model_imitation(
-            run_name="smoke_test_run",
+            run_name="smoke_test_run3",
             weighted_reward_keys=test_reward_keys,
             total_timesteps=TEST_TIMESTEPS,
             seed=42,

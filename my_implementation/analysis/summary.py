@@ -14,7 +14,7 @@ def summary_table(run_names, checkpoints_dir, savepath, n_episodes=20):
             continue
 
         print(f"Évaluation de {run_name} (checkpoint: {os.path.basename(ckpt_path)})...")
-        model = PPO.load(ckpt_path)
+        model = PPO.load(ckpt_path, device="cpu")
         metrics = evaluate_model(model, n_episodes=n_episodes)
         metrics["run_name"] = run_name
         metrics["checkpoint"] = os.path.basename(ckpt_path)
