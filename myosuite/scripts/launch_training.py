@@ -1,4 +1,4 @@
-from my_implementation.training.trainer import train_model_imitation
+from myosuite.my_implementation.training.trainer import train_model_imitation
 
 if __name__ == "__main__":
     model = train_model_imitation(

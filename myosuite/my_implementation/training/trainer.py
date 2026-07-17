@@ -6,9 +6,9 @@ from stable_baselines3.common.callbacks import CheckpointCallback
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
-from my_implementation.training.callbacks import ResumableEvalCallback
-from my_implementation.training.checkpoints import find_latest_checkpoint
-from my_implementation.utils.paths import get_results_root, get_local_logs_root
+from myosuite.my_implementation.training.callbacks import ResumableEvalCallback
+from myosuite.my_implementation.training.checkpoints import find_latest_checkpoint
+from myosuite.my_implementation.utils.paths import get_results_root, get_local_logs_root
 
 
 def train_model_imitation(run_name, weighted_reward_keys, total_timesteps, seed,

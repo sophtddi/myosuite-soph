@@ -7,7 +7,7 @@ sys.path.append(os.path.normpath(os.path.join(curr_dir, "../")))
 
 # Import de ta fonction d'entraînement
 # Adapte l'import selon l'arborescence exacte de ton projet
-from my_implementation.training.trainer import train_model_imitation 
+from myosuite.my_implementation.training.trainer import train_model_imitation 
 
 if __name__ == "__main__":
     print("🚦 DÉMARRAGE DU SMOKE TEST — RUN TRACK IMITATION 🚦")

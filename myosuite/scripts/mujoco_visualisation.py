@@ -3,7 +3,7 @@ import time
 import pandas as pd
 import numpy as np
 import gymnasium as gym
-import my_implementation
+import myosuite.my_implementation as my_implementation
 import mujoco
 import myosuite
 

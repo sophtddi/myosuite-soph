@@ -2,8 +2,8 @@ import os
 import pandas as pd
 from stable_baselines3 import PPO
 
-from my_implementation.training.checkpoints import find_latest_checkpoint
-from my_implementation.analysis.evaluate import evaluate_model
+from myosuite.my_implementation.training.checkpoints import find_latest_checkpoint
+from myosuite.my_implementation.analysis.evaluate import evaluate_model
 
 def summary_table(run_names, checkpoints_dir, savepath, n_episodes=20):
     rows = []

@@ -10,14 +10,14 @@ register(
     max_episode_steps=1000,
     kwargs={
         # reprend les kwargs de myoChallengeOslRunFixed-v0, en pointant vers TES assets
-        'model_path': curr_dir + '/../myosuite/envs/myo/assets/leg/myoosl_runtrack.xml',
+        'model_path': curr_dir + '/../envs/myo/assets/leg/myoosl_runtrack.xml',
         'normalize_act': True,
         'reset_type': 'random',
         'terrain': 'flat',
         'end_pos': -15,
         'frame_skip': 5,
         'start_pos': 14,
-        'init_pose_path': curr_dir + '/../myosuite/envs/myo/assets/leg/sample_gait_cycle.csv',
+        'init_pose_path': curr_dir + '/../envs/myo/assets/leg/sample_gait_cycle.csv',
         'max_episode_steps': 1000,
     }
 )
